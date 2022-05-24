@@ -73,6 +73,7 @@ def generate_ssd_priors(specs: List[SSDSpec], image_size, clamp=True) -> torch.T
                     w / ratio,
                     h * ratio
                 ])
+        a = 2
 
     priors = torch.tensor(priors)
     if clamp:
